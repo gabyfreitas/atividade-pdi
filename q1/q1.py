@@ -30,7 +30,7 @@ def detectar_colisao(contornos):
     for i, cnt1 in enumerate(contornos):
         for j, cnt2 in enumerate(contornos):
             if i != j:  
-                # Verifica se os retângulos delimitadores das formas se sobrepõem
+               
                 if cv2.boundingRect(cnt1) == cv2.boundingRect(cnt2):
                     return True
     return False
